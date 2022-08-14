@@ -39,7 +39,7 @@ function App() {
     <Box bg={"#66EDFF"} p={4}>
       <Box>
         <Heading>Pokimon</Heading>
-        <Box mt={10} pb={4}>
+        <Box mt={10} pb={4} m={"0 auto"} maxW={"6xl"}>
           <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={10}>
             {data.map((item, idx) => {
               return <PokimonCard key={idx} item={item} />;
